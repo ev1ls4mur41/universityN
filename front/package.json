@@ -3,7 +3,7 @@
   "version": "3.0.0",
   "private": true,
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "cd .. && husky install front/.husky",
     "build": "next build",
     "dev": "kill-port 3000 && NODE_OPTIONS='--inspect' next dev -p 3000",
     "prod": "next start",
