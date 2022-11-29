@@ -12,7 +12,7 @@ function IndexPage() {
         <Flex className="glow" alignItems="center" justifyContent="center" flexDirection="column">
             <ErrorBoundary>
                 <Image src="/images/svg/logo.svg" width={100} height={100} alt="logo" />
-                <div>NextJS Starter</div>
+                <div>webpraktik Starter</div>
 
                 {!isLoading && !isError && <div className="result">{data.result}</div>}
             </ErrorBoundary>
