@@ -1,0 +1,107 @@
+$black-color: #000
+$grey-color: #8EA1AD
+$border-color: #D5DCE4
+
+.container
+  font-family: Roboto, sans-serif
+  align-items: center
+  width: 100%
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid $border-color
+
+.logo
+  padding: 20px 40px
+
+.FullDate
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row
+  align-items: center
+  margin-right: 60px
+
+
+.dateYear
+  font-size: 14px
+  text-align: center
+
+
+.dateWeak
+  font-size: 10px
+  color: $grey-color
+
+
+.clockWidgetText
+  font-size: 32px
+  padding-right: 16px
+  align-items: center
+  justify-content: center
+
+.Border
+  border-right: 10px solid #000
+  max-height: 28px
+
+
+
+.Date
+  display: flex
+  flex-direction: column
+  padding-left: 16px
+
+/* Slider */
+
+.switch
+  position: relative
+  display: inline-block
+  width: 40px
+  height: 24px
+
+
+/* Hide default HTML checkbox */
+.switch input
+  display: none
+
+.sliderRound
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #ccc
+  -webkit-transition: .4s
+  transition: .4s
+
+.sliderRound:before
+  position: absolute
+  content: ""
+  height: 20px
+  width: 20px
+  top: 2px
+  background-color: white
+  -webkit-transition: .4s
+  transition: .4s
+
+input:checked + .sliderRound
+  background-color: #2196F3
+
+
+input:focus + .sliderRound
+  box-shadow: 0 0 1px #2196F3
+
+
+input:checked + .sliderRound:before
+  -webkit-transform: translateX(19px)
+  -ms-transform: translateX(19px)
+  transform: translateX(19px)
+
+
+/* Rounded sliders */
+.sliderRound
+  border-radius: 20px
+
+
+
+.sliderRound:before
+  border-radius: 50%
