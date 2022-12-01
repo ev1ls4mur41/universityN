@@ -28,6 +28,8 @@ rollback:
 
 test:
   stage: test
+  script:
+    - ssh -o StrictHostKeyChecking=no spaghetti@82.146.59.32 '/home/spaghetti/spaghetti.w6p.ru/.gitlab/rollback.sh'
   tags:
     - student
   only:
@@ -37,6 +39,8 @@ test:
 
 build:
   stage: build
+  script:
+    - ssh -o StrictHostKeyChecking=no spaghetti@82.146.59.32 '/home/spaghetti/spaghetti.w6p.ru/.gitlab/rollback.sh'
   tags:
     - student
   only:
