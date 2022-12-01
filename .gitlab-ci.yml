@@ -1,6 +1,8 @@
 stages:
   - deploy
   - rollback
+  - test
+  - build
 
 deploy:
   stage: deploy
@@ -17,6 +19,24 @@ rollback:
   stage: rollback
   script:
     - ssh -o StrictHostKeyChecking=no spaghetti@82.146.59.32 '/home/spaghetti/spaghetti.w6p.ru/.gitlab/rollback.sh'
+  tags:
+    - student
+  only:
+    refs:  
+      - master
+  when: manual
+
+test:
+  stage: test
+  tags:
+    - student
+  only:
+    refs:  
+      - master
+  when: manual
+
+build:
+  stage: build
   tags:
     - student
   only:
