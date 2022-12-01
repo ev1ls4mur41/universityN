@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "kill-port 3000 && NODE_OPTIONS='--inspect' next dev -p 3000",
+    "dev": "kill-port 3000 && cross-env NODE_OPTIONS='--inspect' next dev -p 3000",
     "prod": "next start",
     "pm2": "pm2 start pm2.json",
     "reload": "pm2 reload pm2.json",
@@ -30,6 +30,7 @@
     "mobx": "^6.7.0",
     "mobx-react-lite": "3.4.0",
     "modern-normalize": "1.1.0",
+    "moment": "2.29.4",
     "nanoid": "^4.0.0",
     "next": "13.0.3",
     "next-seo": "5.14.1",
