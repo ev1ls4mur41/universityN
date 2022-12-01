@@ -18,12 +18,32 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'userName' => fake()->name(),
+            'userLog' => fake()->unique()->safeEmail(),
+            //'email_verified_at' => now(),
+            'userGroup' => fake() -> bloodGroup(),
+            'userPass' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
 
+
+
+            /*
+             *
+             *   $table->id('userId');
+            $table->string('userName');
+            $table->string('userLog')->unique();
+           // $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table -> string('userGroup');
+            $table -> boolean('isTeacher');
+            $table->rememberToken();
+            $table->timestamps();
+             *
+             *
+             *
+             *
+             *
+             */
         ];
     }
 
