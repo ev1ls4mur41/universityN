@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
          \App\Models\User::factory()->create([
              'userName' => 'Test User',
              'userLog' => 'test@example.com',
+             'userGroup' => 'CS-50',
+             'userPass' => 'H0noRAnDG10ry'
 
              /*
               *  'userName' => fake()->name(),
