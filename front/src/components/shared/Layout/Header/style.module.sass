@@ -1,6 +1,4 @@
-$black-color: #000
-$grey-color: #8EA1AD
-$border-color: #D5DCE4
+@import 'src/assets/styles/config'
 
 .container
   font-family: Roboto, sans-serif
@@ -45,13 +43,25 @@ $border-color: #D5DCE4
   max-height: 28px
 
 
-
 .Date
   display: flex
   flex-direction: column
   padding-left: 16px
+  padding-right: 60px
 
 /* Slider */
+
+.Slider
+  display: flex
+  flex-direction: row
+
+
+.lightThemeLogo
+  padding-right: 8px
+
+.darkThemeLogo
+  padding-left: 8px
+
 
 .switch
   position: relative
@@ -71,7 +81,7 @@ $border-color: #D5DCE4
   left: 0
   right: 0
   bottom: 0
-  background-color: #ccc
+  background-color: #E7EBF1
   -webkit-transition: .4s
   transition: .4s
 
@@ -81,19 +91,23 @@ $border-color: #D5DCE4
   height: 20px
   width: 20px
   top: 2px
-  background-color: white
+  background-color: #5462DA
+  //background-color: #5462DA
   -webkit-transition: .4s
   transition: .4s
 
+
+
+
 input:checked + .sliderRound
-  background-color: #2196F3
+  background-color: #2C2D35
 
 
-input:focus + .sliderRound
-  box-shadow: 0 0 1px #2196F3
+
 
 
 input:checked + .sliderRound:before
+  background-color: #8668A8
   -webkit-transform: translateX(19px)
   -ms-transform: translateX(19px)
   transform: translateX(19px)
@@ -102,7 +116,6 @@ input:checked + .sliderRound:before
 /* Rounded sliders */
 .sliderRound
   border-radius: 20px
-
 
 
 .sliderRound:before

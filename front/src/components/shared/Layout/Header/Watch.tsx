@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import clockstyle from './style.module.sass';
+import HeaderStyle from './style.module.sass';
 
 function ClockWidget() {
     const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -15,7 +15,7 @@ function ClockWidget() {
 
     setInterval(updateTime, updateTimeSet);
 
-    return <p className={clockstyle.clockWidgetText}>{correctTime}</p>;
+    return <p className={HeaderStyle.clockWidgetText}>{correctTime}</p>;
 }
 
 export default ClockWidget;

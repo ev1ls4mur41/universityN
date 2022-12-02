@@ -1,15 +1,13 @@
-
 import React from 'react';
 
-import HeaderLayout from "@/components/shared/Layout/HeaderLayout";
-import WatchLayout from "@/components/shared/Layout/HeaderLayout/Date";
+import Header from '@/components/shared/Layout/Header';
+import Sidebar from '@/components/shared/Layout/Sidebar/sidebar';
 
 function IndexPage() {
-
     return (
         <div>
-            <HeaderLayout />
-
+            <Header />
+            <Sidebar />
         </div>
     );
 }
