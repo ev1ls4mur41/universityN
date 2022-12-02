@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('main', function () {
+   return "<b>this is main page!</b>";
 });
+
+Route::get('/contacts', [\App\Http\Controllers\TestController::class, 'getContacts']);
