@@ -1,5 +1,5 @@
 export default {
-    title: 'NextJs starter pack',
+    title: 'University N',
     additionalLinkTags: [
         {
             rel: 'icon',

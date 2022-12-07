@@ -1,17 +1,9 @@
-
 import React from 'react';
 
-import HeaderLayout from "@/components/shared/Layout/HeaderLayout";
-import WatchLayout from "@/components/shared/Layout/HeaderLayout/Date";
+import FullLayout from '@/components/shared/Layout/FullLayout';
 
 function IndexPage() {
-
-    return (
-        <div>
-            <HeaderLayout />
-
-        </div>
-    );
+    return <FullLayout />;
 }
 
 export default IndexPage;
