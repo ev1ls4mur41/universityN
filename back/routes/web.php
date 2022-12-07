@@ -13,8 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('main', function () {
-   return "<b>this is main page!</b>";
-});
+Route::get('/contacts', [\App\Http\Controllers\ContactsController::class, 'getContacts'])
+    -> name('contactsGet');
 
-Route::get('/contacts', [\App\Http\Controllers\TestController::class, 'getContacts']);
+Route::post('/', function () {
+    return 0;
+}) -> name('contactsPost');
+
+Route::put('/', function () {
+    return 0;
+}) -> name('contactsPut');
+
+Route::delete('/', function () {
+    return 0;
+}) -> name('contactsDelete');
