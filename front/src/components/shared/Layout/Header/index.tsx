@@ -11,7 +11,9 @@ import HeaderStyle from './style.module.sass';
 function Header() {
     return (
         <div className={HeaderStyle.container}>
-            <img src="/images/svg/logo.svg" alt="Университет N" className={HeaderStyle.logo} />
+            <picture>
+                <img src="/images/svg/logo.svg" alt="Университет N" className={HeaderStyle.logo} />
+            </picture>
             <div className={HeaderStyle.FullDate}>
                 <div className={HeaderStyle.Clock}>
                     <ClockWidget />
