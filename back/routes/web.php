@@ -16,14 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/contacts', [\App\Http\Controllers\ContactsController::class, 'getContacts'])
     -> name('contactsGet');
 
-Route::post('/', function () {
-    return 0;
-}) -> name('contactsPost');
+Route::post('/contacts', [\App\Http\Controllers\ContactsController::class, 'postContacts']) -> name('contactsPost');
 
 Route::put('/', function () {
     return 0;
 }) -> name('contactsPut');
 
-Route::delete('/', function () {
-    return 0;
-}) -> name('contactsDelete');
+Route::delete('/', [\App\Http\Controllers\ContactsController::class, 'deleteContacts']) -> name('contactsDelete');
+
+Route::get('files', [\App\Http\Controllers\FilesController::class, 'getFiles']);
+Route::post('files', [\App\Http\Controllers\FilesController::class, 'postFiles']);
+Route::delete('files', [\App\Http\Controllers\FilesController::class, 'deleteFiles']);
