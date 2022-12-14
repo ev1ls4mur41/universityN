@@ -1,15 +1,28 @@
 import React from 'react';
 
-import Footer from '@/components/shared/Layout/Footer';
-import Header from '@/components/shared/Layout/Header';
+import Footer from '@/components/shared/Layout/Footer/footer';
+import Header from '@/components/shared/Layout/Header/header';
 import Sidebar from '@/components/shared/Layout/Sidebar/sidebar';
 
-function FullLayout() {
+type PageProps = {
+    children: React.ReactNode;
+};
+
+function FullLayout({ children }: PageProps) {
     return (
-        <div>
-            <Header />
-            <Sidebar />
-            <Footer />
+        <div className="pageWrapper">
+            <div className="mainHeader">
+                <Header />
+            </div>
+            <div className="mainAside">
+                <Sidebar />
+            </div>
+            <div className="mainContent">
+                {children}
+                <div className="mainFooter">
+                    <Footer />
+                </div>
+            </div>
         </div>
     );
 }
