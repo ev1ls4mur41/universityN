@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import HeaderStyle from './style.module.sass';
+import HeaderStyle from '../Header/style.module.sass';
 
 function SliderLayout() {
     return (

@@ -4,7 +4,7 @@ import FooterStyle from './style.module.sass';
 
 function Footer() {
     return (
-        <div className={FooterStyle.container}>
+        <footer className={FooterStyle.footer}>
             <div className={FooterStyle.innerCont}>
                 <figure className={FooterStyle.infoBlock}>
                     <p className={FooterStyle.infoTitle}>Отдел помощи студентам</p>
@@ -34,7 +34,7 @@ function Footer() {
                     </a>
                 </figure>
             </div>
-        </div>
+        </footer>
     );
 }
 

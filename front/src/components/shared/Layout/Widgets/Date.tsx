@@ -3,7 +3,7 @@ import 'moment/locale/ru';
 import moment from 'moment';
 import React from 'react';
 
-import HeaderStyle from './style.module.sass';
+import HeaderStyle from '../Header/style.module.sass';
 
 function DateLayout() {
     const DateOfYear = moment().format('L');

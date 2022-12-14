@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import HeaderStyle from './style.module.sass';
+import HeaderStyle from '../Header/style.module.sass';
 
 function ClockWidget() {
     const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
