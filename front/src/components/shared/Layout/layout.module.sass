@@ -1,0 +1,33 @@
+@import '/src/assets/styles/config'
+
+@mixin paddingEx
+  padding: 2rem
+
+@mixin titleText
+  font-style: normal
+  font-weight: 500
+  font-size: 32px
+  line-height: 125%
+  color: #20293A
+
+.pageWrapper
+  display: flex
+  flex-flow: row wrap
+
+.mainHeader
+  order: 1
+  flex: 0 1 100%
+
+.mainAside
+  order: 2
+  flex: 0 1 280px
+  height: 820px
+  display: flex
+  justify-content: space-between
+  @include paddingEx
+
+.mainContent
+  order: 3
+  flex: 1
+  background: #F2F5F9
+  @include paddingEx
