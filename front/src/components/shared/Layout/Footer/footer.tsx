@@ -33,6 +33,12 @@ function Footer() {
                         center-prof-abitur@donstsu.ru
                     </a>
                 </figure>
+                <figure className={FooterStyle.infoBlock}>
+                    <p className={FooterStyle.infoTitle}>
+                        г. Ростов-на-Дону, ул. Абрикосовая, 105/42
+                    </p>
+                    <p className={FooterStyle.infoTitle}>© Университет N</p>
+                </figure>
             </div>
         </footer>
     );
