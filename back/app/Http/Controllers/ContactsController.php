@@ -43,9 +43,9 @@ class ContactsController extends Controller
      * @return \Illuminate\Http\JsonResponse
      *
      * @OA\Post(
-     *     path="/registr",
+     *     path="/contacts",
      *     operationId="regUser",
-     *     tags={"Users"},
+     *     tags={"contacts"},
      *     summary="Registration user",
      *     @OA\Response(
      *          response="201",

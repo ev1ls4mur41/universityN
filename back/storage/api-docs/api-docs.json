@@ -23,6 +23,18 @@
                         "description": "OK"
                     }
                 }
+            },
+            "post": {
+                "tags": [
+                    "contacts"
+                ],
+                "summary": "Registration user",
+                "operationId": "regUser",
+                "responses": {
+                    "201": {
+                        "description": "Successful operation"
+                    }
+                }
             }
         }
     },
