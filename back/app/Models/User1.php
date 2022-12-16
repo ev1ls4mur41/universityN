@@ -19,12 +19,11 @@ class User1 extends Model
     protected $fillable = [
         'firstName',
         'lastName',
+        'middleName',
         'userLogin',
         'numberDiary',
         'userGroup',
         'phoneNumber',
-        'isTeacher',
-        'isAdmin',
         'isLeader',
         'imgLink',
         'averageMark',
