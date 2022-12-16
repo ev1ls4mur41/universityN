@@ -14,6 +14,6 @@ class User1 extends Seeder
      */
     public function run()
     {
-        \App\Models\User1::factory(10) -> create();
+        \App\Models\User1::factory(10)->create();
     }
 }

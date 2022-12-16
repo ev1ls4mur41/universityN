@@ -19,16 +19,17 @@ class User1Factory extends Factory
     {
         return [
             'firstName' => fake()->firstName(),
-            'lastName' => fake() -> lastName(),
-            'middleName' => fake() -> firstName(),
-            'userLogin' => fake() -> email(),
-            'numberDiary'=> fake() -> randomNumber(4, true),
-            'phone_number' => fake() -> phoneNumber(),
-            'isTeacher' => fake() -> boolean(45),
-            'isAdmin' => fake() -> boolean(30),
-            //'isLeader' => fake() -> boolean(),
-            'imgLink'=> "ibb.co/" . fake() -> bothify('??????'),
-            'userPass' => fake() -> sha256()
+            'lastName' => fake()->lastName(),
+            'middleName' => fake()->firstName(),
+            'userLogin' => fake()->email(),
+            'numberDiary' => fake()->bothify('??') . "-" . fake()->bothify('????-##')
+                ."-" . fake()->bothify('##'),
+            'phone_number' => fake()->phoneNumber(),
+            'isTeacher' => fake()->boolean(45),
+            'isAdmin' => fake()->boolean(30),
+            'isLeader' => fake()->boolean(),
+            'imgLink' => "ibb.co/" . fake()->bothify('??????'),
+            'userPass' => fake()->sha256()
         ];
     }
 

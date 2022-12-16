@@ -539,6 +539,7 @@ class ComposerStaticInitf7324fd4826068e18f179c5569a28666
         'App\\Http\\Controllers\\ContactsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactsController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\FilesController' => __DIR__ . '/../..' . '/app/Http/Controllers/FilesController.php',
+        'App\\Http\\Controllers\\TestController' => __DIR__ . '/../..' . '/app/Http/Controllers/TestController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

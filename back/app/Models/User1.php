@@ -17,11 +17,17 @@ class User1 extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'userName',
+        'firstName',
+        'lastName',
         'userLogin',
+        'numberDiary',
         'userGroup',
+        'phoneNumber',
         'isTeacher',
-        'averageMark'
+        'isAdmin',
+        'isLeader',
+        'imgLink',
+        'averageMark',
     ];
 
     /**

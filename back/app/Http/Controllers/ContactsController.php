@@ -3,17 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 
 class ContactsController extends Controller
 {
-    use ValidatesRequests;
-
     /**
      * @OA\Get(
-     *path="/contacts,
-     *operationId = "contacts",
+     *path="/contacts",
+     *operationId = "getContacts",
      *tags={"contacts"},
      *summary="Get Contacts",
      *     @OA\Response(
@@ -24,8 +21,7 @@ class ContactsController extends Controller
      * */
     protected function getContacts()
     {
-        $array = [ //в зависимости от пользователей нужно будет подтягивать
-            // данные по ключу, пока не реализовано (не знаю как)
+        $array = [
             'firstName' => 'User',
             'lastName' => 'Name',
             'userLogin' => 'QweRty@asd.zxc',
@@ -57,6 +53,4 @@ class ContactsController extends Controller
         ];
         return response()->json($arr, 204);
     }
-
-/*тестовое изменение*/
 }

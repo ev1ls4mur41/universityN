@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+
 class FilesController extends Controller
 {
     protected function getFiles()
@@ -21,20 +22,21 @@ class FilesController extends Controller
         return response()->json($array, 200);
     }
 
-    protected function postFiles(){
+    protected function postFiles()
+    {
         $arr = [
             'notice' => 'CREATED',
         ];
-        return response() -> json($arr, 201);
+        return response()->json($arr, 201);
     }
 
-    protected function deleteFiles(){
+    protected function deleteFiles()
+    {
         $arr = [
             'notice' => 'DELETED',
         ];
-        return response() -> json($arr, 204);
+        return response()->json($arr, 204);
     }
-
 
 
 }
