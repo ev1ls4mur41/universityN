@@ -13,6 +13,6 @@
 /back/auth.json
 /back/npm-debug.log
 /back/yarn-error.log
-/back/.fleet
-/back/.idea
-/back/.vscode
+.fleet
+.idea
+.vscode

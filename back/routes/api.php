@@ -19,7 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::middleware("api") -> group(function (){
-    Route::get('/contacts', [\App\Http\Controllers\ContactsController::class, 'getContacts']);
-    Route::get('/contacts', [\App\Http\Controllers\ContactsController::class, 'postContacts']);
+    Route::get('/contacts', [\App\Http\Controllers\ContactsController::class, 'getContactsStudents']);
+    Route::post('/contacts', [\App\Http\Controllers\ContactsController::class, 'postContacts']);
 });
 

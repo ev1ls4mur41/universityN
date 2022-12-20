@@ -22,7 +22,7 @@ class ContactsController extends Controller
      * )
      *)
      */
-    protected function getContacts()
+    protected function getContactsStudents()
     {
         $array = [
             'firstName' => 'User',
