@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\User1;
 use Illuminate\Http\Request;
 
 class ContactsController extends Controller
@@ -18,13 +19,21 @@ class ContactsController extends Controller
      *summary="Get Contacts",
      *@OA\Response(
      *response = "200",
-     *description ="OK"
-     * )
+     *description ="OK",
+     *     @OA\MediaType(
+     *     mediaType = "application/json",
+     *           @OA\Schema(
+     *                  @OA\Property(type="boolean", property="success", example="false"),
+     *                  @OA\Property(type="array", property="error", @OA\Items(type="string", example="asdasdasdas")),
+     *)
+     *)
+     *)
      *)
      */
     protected function getContactsStudents()
     {
-        $array = [
+        $cont = User1::all();
+      /*  $array = [
             'firstName' => 'User',
             'lastName' => 'Name',
             'middleName' => '',
@@ -35,8 +44,8 @@ class ContactsController extends Controller
             'isLeader' => '1',
             'imgLink' => 'ibb.co/qasdxc',
             'averageMark' => '4.0',
-        ];
-        return response()->json($array, 200);
+        ];*/
+        return response()->json($cont, 200);
     }
 
     /**

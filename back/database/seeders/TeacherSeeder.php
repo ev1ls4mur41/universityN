@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Files extends Seeder
+class TeacherSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class Files extends Seeder
      */
     public function run()
     {
-        \App\Models\Files::factory(10)->create();
+        \App\Models\Teacher::factory(10)->create();
     }
 }
